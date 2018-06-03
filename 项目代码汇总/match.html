@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>表白墙主页</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        .main {
+            background-color: #fff;
+            width: 90%;
+        }
+        .main>div {
+            width: 26%;
+            padding-bottom: 26%;
+            border: 50% solid #666666;
+            background-color: white;
+            border-radius: 3%;
+            float: left;
+            margin: 1%;
+        }
+        .box{
+            background-image: url("images/cat_meitu_4.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+        .box1{
+            background-image: url("images/006Suwnlly1frbisjn0u5j33402c04qq_meitu_3.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+       .btn-sm{
+           color: #F29C9C;
+           border: none;
+           font-size: 16px;
+       }
+        #identity{
+            font-weight: bolder;
+        }
+        #identity{
+            border: none;
+        }
+        .box2{
+            background-image: url("images/006Suwnlly1fr21nrv1tyj32c02c07wi.jpg");
+            background-size: cover;
+            background-position: center center;
+        }
+   
+
+
+    </style>
+</head>
+
+<body>
+<div style="background-color: #666666">
+<div style="position: fixed;width: 100%;z-index: 5">
+    <nav style="margin-bottom: 0px;" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="display: inline-block" class="navbar-brand" href="#">Neuers</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html">首页</a></li>
+                    <li class=""><a href="teamhomepage.html">竞赛</a></li>
+                    <li><a href="car.html">拼车</a></li>
+                    <li><a href="match.html">表白墙</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="aboutus.html">关于我们 </a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人信息 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html">登录/注册</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="main1.html">个人主页</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+
+<div>
+    <img style="width:100%" src="images/background(1).jpg" class="img-responsive" alt="" >
+</div>
+
+    <div style="position: relative; top: 25px;"  class="panel panel-default">
+        <div class="panel-body">
+<div style="position: relative; top: 0px;margin: 0px;background-color: white" id="content" class="container-fluid">
+    <div class="row">
+        <div class="col-sm-8"  >
+            <h3 class="text-center text-nowrap">表白墙</h3>
+            <hr>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-xs-4">
+                        <button type="button" class="btn btn-default btn-lg" data-toggle="modal" data-target="#exampleModal" data-whatever="@mdo" style="font-weight: bolder; color: #F29C9C; border: none" ><span class="glyphicon glyphicon-plus-sign" style="font-weight: bolder; color: #F29C9C"></span>点击发布新表白</button>
+                    </div>
+                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel">
+                        <div class="modal-dialog" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="exampleModalLabel">发布新表白</h4>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="form-group">
+                                            <label for="message-text" class="control-label" style="font-family: 'Microsoft YaHei UI Light'" >你的小心思我都知道</label>
+                                            <textarea class="form-control" id="message-text" placeholder="内容在这里写"></textarea>
+                                        </div>
+                                    </form>
+                                    <div class="row">
+                                        <div class="col-sm-3" >
+                                            <button class="btn-default" style="border:none">
+                                                <span class="glyphicon glyphicon-picture" > 图片</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                                    <button type="button" class="btn btn-primary">
+                                        <span class="glyphicon glyphicon-send">
+
+                                        </span> 发布</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container-fluid" style="margin-top: 3%">
+                <div class="col-sm-11 ">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="images/account%20(1).png" alt="..." class="img-rounded">
+                        </div>
+                        <div class="col-xs-5" >
+                            <a href="" id="identity" class="btn-default btn" role="button">
+                                <span>丽丽</span>
+                                <span>工商管理学院</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-1 col-xs-offset-3" >
+                            <button class="btn btn-default btn-sm" type="button">
+                                <span class="glyphicon glyphicon-plus"></span>关注
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-8">
+                            表白理学院17级的张三小哥哥，见过一次面后念念不忘。
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 3%">
+                        <div class="col-xs-7"></div>
+                        <div class="col-xs-2">
+                            <button class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-heart-empty"></span>1
+                            </button>
+                        </div>
+                        <div class="col-xs-2 col-offset-xs-1">
+                            <button class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-comment"></span>1
+                            </button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+            </div>
+            <hr>
+            <div class="container-fluid">
+                <div class="col-sm-11 ">
+                    <div class="row">
+                        <div class="col-xs-2">
+                            <img src="images/account.png" alt="..." class="img-rounded">
+                        </div>
+                        <div class="col-xs-5" >
+                            <a href="" id="identity" class="btn-default btn" role="button">
+                                <span>方鸿渐</span>
+                                <span>计算机学院</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-1 col-xs-offset-3" >
+                            <button class="btn btn-default btn-sm" type="button">
+                                <span class="glyphicon glyphicon-ok"></span>已关注
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-8">
+                            为舍友征大姐姐，小姐姐……
+                            舍友比较可爱，之前去美国交流被一个小姐姐伤心，都有点不相信爱情了。
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 3%">
+                        <div class="col-xs-7"></div>
+                        <div class="col-xs-2">
+                            <button class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-heart"></span>24
+                            </button>
+                        </div>
+                        <div class="col-xs-2 col-offset-xs-1">
+                            <button class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-comment"></span>23
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="container-fluid">
+                <div class="col-sm-11">
+                    <div class="row">
+                        <div class="col-xs-2" >
+                            <img src="images/account.png" alt="..." class="img-rounded">
+                        </div>
+                        <div class="col-xs-5" >
+                            <a href="" id="identity" class="btn-default btn" role="button">
+                                <span>白起</span>
+                                <span>机械学院</span>
+                            </a>
+                        </div>
+                        <div class="col-xs-1 col-xs-offset-3" >
+                            <button class="btn btn-default btn-sm" type="button">
+                                <span class="glyphicon glyphicon-ok"></span>已关注
+                            </button>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2"></div>
+                        <div class="col-xs-8">
+                            我要表白工商管理学院经管1713班的xxx 她真的好可爱好萌，好喜欢她，希望她每天都开心。
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 3%">
+                        <div class="col-xs-offset-2 col-xs-9">
+                            <div class="main clearfix">
+                                <div ></div>
+                                <div class="box"></div>
+                                <div ></div>
+                                <div class="box"></div>
+                                <div class="box2" ></div>
+                                <div class="box"></div>
+                                <div ></div>
+                                <div class="box"></div>
+                                <div ></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin-top: 3%">
+                        <div class="col-xs-7"></div>
+                        <div class="col-xs-2">
+                            <button class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-heart"></span>28
+                            </button>
+                        </div>
+                        <div class="col-xs-2 col-offset-xs-1">
+                            <button class="btn btn-default btn-sm">
+                                <span class="glyphicon glyphicon-comment"></span>14
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                    <div class="panel panel-default">
+                        <div class="panel-heading" role="tab" id="headingOne">
+                            <h4 class="panel-title" style="text-align: center;">
+                                <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="color: #F29C9C; font-size: 17px; font-weight: bolder;">
+                                    查看更多
+                                </a>
+                            </h4>
+                        </div>
+                        <div id="collapseOne" class="panel-collapse collapse " role="tabpanel" aria-labelledby="headingOne">
+                            <div class="panel-body">
+                                <div class="container-fluid">
+                                    <div class="col-sm-11">
+                                        <div class="row">
+                                            <div class="col-xs-2" style="height: 48px">
+                                                <img src="images/account.png" alt="..." style="height: 100%">
+                                            </div>
+                                            <div class="col-xs-5" >
+                                                <a href="" id="identity" class="btn-default btn" role="button">
+                                                    <span>赵四</span>
+                                                    <span>艺术学院</span>
+                                                </a>
+                                            </div>
+                                            <div class="col-xs-1 col-xs-offset-3" >
+                                                <button class="btn btn-default btn-sm" type="button">
+                                                    <span class="glyphicon glyphicon-ok"></span>已关注
+                                                </button>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-xs-2"></div>
+                                            <div class="col-xs-8">
+                                                墙墙，我好喜欢张家辉，感觉他好可爱啊！黑的恰到好处！！
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 3%">
+                                            <div class="col-xs-offset-2 col-xs-9">
+                                                <div class="main clearfix">
+                                                    <div class="box1"></div>
+                                                    <div class="box1"></div>
+                                                    <div class="box1"></div>
+                                                    <div class="box1"></div>
+                                                    <div class="box1"></div>
+                                                    <div class="box1"></div>
+                                                    <div class="box1"></div>
+                                                    <div class="box1"></div>
+                                                    <div class="box1"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row" style="margin-top: 3%">
+                                            <div class="col-xs-7"></div>
+                                            <div class="col-xs-2">
+                                                <button class="btn btn-default btn-sm">
+                                                    <span class="glyphicon glyphicon-heart"></span>28
+                                                </button>
+                                            </div>
+                                            <div class="col-xs-2 col-offset-xs-1">
+                                                <button class="btn btn-default btn-sm">
+                                                    <span class="glyphicon glyphicon-comment"></span>14
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <div class="row">
+                <div class="col-xs-offset-1 col-xs-10">
+                    <img src="images/ad.jpg" alt="" class="img-responsive">
+                </div>
+            </div>
+            <div class="row" style="margin-top: 3%">
+                <div class="col-xs-offset-2 col-xs-7" style="font-weight: bolder; font-size: 16px; color:#363636;">
+                    COCO CRUSH
+                    <br>
+                    CHANEL Ltd.
+                </div>
+                <div class=" col-xs-1">
+                    <span class="glyphicon glyphicon-tags" style="font-size: 16px"> 广告</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-offset-2 col-xs-2">
+                    <button class="btn btn-sm btn-default">
+                        <span class="glyphicon glyphicon-share" ></span>
+                    </button>
+                </div>
+                <div class="col-xs-offset-1 col-xs-2">
+                    <button class="btn btn-sm btn-default">
+                        <span class="glyphicon glyphicon-comment"></span>12
+                    </button>
+                </div>
+                <div class=" col-xs-offset-1 col-xs-2">
+                    <button class="btn btn-sm btn-default">
+                        <span class="glyphicon glyphicon-heart"></span>56
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="col-sm-4 panel panel-default">
+            <div class="row">
+                <h3 class="text-center text-nowrap">
+                    可能认识的人
+                </h3>
+            </div>
+            <hr>
+            <div class="row">
+                <div class="col-xs-2" id="account1">
+                    <img src="images/account.png" alt="">
+                </div>
+                <div class="col-xs-5" >
+                    <a href="" id="identity" class="btn-default btn" role="button">
+                        <span>方鸿渐</span>
+                        <span>计算机学院</span>
+                    </a>
+                </div>
+                <div class="col-xs-1 col-xs-offset-2" >
+                    <button class="btn btn-default btn-sm" type="button">
+                        <span class="glyphicon glyphicon-plus"></span>关注
+                    </button>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%">
+                <div class="col-xs-2" id="account2">
+                    <img src="images/account%20(1).png" alt="">
+                </div>
+                <div class="col-xs-5" >
+                    <a href="" id="identity" class="btn-default btn" role="button">
+                        <span>沈林</span>
+                        <span>冶金学院</span>
+                    </a>
+                </div>
+                <div class="col-xs-1 col-xs-offset-2" >
+                    <button class="btn btn-default btn-sm" type="button">
+                        <span class="glyphicon glyphicon-plus"></span>关注
+                    </button>
+                </div>
+            </div>
+            <div class="row" style="margin-top: 5%; margin-bottom: 3%">
+                <div class="col-xs-2" id="account3">
+                    <img src="images/account%20(1).png" alt="">
+                </div>
+                <div class="col-xs-5" >
+                    <a href="" id="identity" class="btn-default btn" role="button">
+                        <span>苏青青</span>
+                        <span>外国语学院</span>
+                    </a>
+                </div>
+                <div class="col-xs-1 col-xs-offset-2" >
+                    <button class="btn btn-default btn-sm" type="button">
+                        <span class="glyphicon glyphicon-plus"></span>关注
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</div>
+    </div>
+</div>
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

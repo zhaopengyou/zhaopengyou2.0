@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PersonalInfo</title>
+
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <style type="text/css">
+        #a{
+            background-color: #333333;
+        }
+        body,#a,#c,table{
+            text-align: center;
+        }
+        p,#h{
+            font-size: 16px;
+
+        }
+        #b{
+            color: white;
+            font-size: 17px;
+            width: 140px;
+            padding: 8px;
+            border-radius: 10px;
+            border: cornflowerblue;
+            background-color: cornflowerblue;
+        }
+        #c{
+            border: cornflowerblue 2px solid;
+            margin: 30px 50px 30px 50px;
+            border-radius: 15px;
+            font-size: 16px;
+        }
+        #c1{
+            margin-top: 45px;
+            font-size: 18px;
+            font-family: ;
+        }
+        #c2{
+            font-size: 20px;
+            font-weight: bold;
+        }
+        #d{
+            margin-top: 20px;
+        }
+        #e{
+            text-align: left;
+            font-size: 20px;
+            font-family: ;
+            color: cornflowerblue;
+            margin-top: 5px;
+        }
+        #f{
+            color: black;
+            font-size: 18px;
+        }
+        table{
+            margin-top: 10px;
+        }
+        li{
+            color: black;
+        }
+        #ee{
+            margin-bottom: 30px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+<div style="position: fixed;width: 100%;z-index: 5">
+    <nav style="margin-bottom: 0px;" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="display: inline-block" class="navbar-brand" href="#">Neuers</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html">首页</a></li>
+                    <li class=""><a href="teamhomepage.html">竞赛</a></li>
+                    <li><a href="car.html">拼车</a></li>
+                    <li><a href="match.html">表白墙</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="aboutus.html">关于我们 </a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人信息 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html">登录/注册</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="main1.html">个人主页</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+
+<div><img src="images/JSSY2.jpg" alt="" class="img-responsive"></div>
+
+<div id="a" class="container-fluid">
+    <div class="row">
+        <div class="col-xs-5"></div>
+        <div class="col-xs-2" id="b">个人项目信息</div>
+        <div class="col-xs-5"></div>
+    </div>
+</div>
+
+<div class="container-fluid" id="c">
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-7" id="c1">
+            <div id="c2">李雷雷</div>
+                工商管理学院丨互联网+金融丨2015级
+                <br>188****8888丨******@163.com
+                <br>全国大学生数学建模竞赛
+        </div>
+        <div class="col-md-2" id="d"><img src="images/LileiB.png" alt=""></div>
+        <div class="col-md-2"></div>
+    </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10" id="e">相关成绩</div>
+        <img src="images/FGX.png" alt="" width="65%">
+        <div class="row">
+            <div class="col-md-3"></div>
+            <div class="col-md-6" id="e">
+                <table class="table table-bordered">
+                <tr>
+                    <td>科目名称</td>
+                    <td>成绩</td>
+                </tr>
+                <tr id="f">
+                    <td>高等数学（一）</td>
+                    <td>92</td>
+                </tr>
+                <tr id="f">
+                    <td>高等数学（二）</td>
+                    <td>95</td>
+                </tr>
+                <tr id="f">
+                    <td>线性代数</td>
+                    <td>89</td>
+                </tr>
+                <tr id="f">
+                    <td>概率论与数理统计</td>
+                    <td>93</td>
+                </tr>
+                <tr id="f">
+                    <td>统计学</td>
+                    <td>优</td>
+                </tr>
+            </table>
+            </div>
+            <div class="col-md-3"></div>
+        </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10" id="e">曾获荣誉</div>
+        <img src="images/FGX.png" alt="" width="65%">
+    </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="e">
+                <li id="h">美国大学生数学建模竞赛二等奖（2016）</li>
+                <li id="h">东北大学“建龙钢铁”数学建模竞赛二等奖（2017）</li>
+                <li id="h">东北大学校三等奖学金（2015-2016）</li>
+                <li id="h">东北大学校二等奖学金（2016-2017）</li>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-10" id="e">个人优势</div>
+        <img src="images/FGX.png" alt="" width="65%">
+    </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="e">
+                <li id="h">熟练运用MATLAB、SAS软件</li>
+                <li id="h">参与美赛及校赛且俊获奖，有相关经验</li>
+                <li id="h">数学成绩及总成绩优异，获二、三等奖学金</li>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-10" id="e">理想队友</div>
+            <img src="images/FGX.png" alt="" width="65%">
+        </div>
+        <div class="row" id="ee">
+            <div class="col-md-2"></div>
+            <div class="col-md-8" id="e">
+                <li id="h">浑南校区，2015级</li>
+                <li id="h">有较强的逻辑思维能力及论文撰写能力</li>
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+
+    </div>
+</div>
+
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>

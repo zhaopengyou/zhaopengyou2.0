@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim 和 Respond.js 是为了让 IE8 支持 HTML5 元素和媒体查询（media queries）功能 -->
+    <!-- 警告：通过 file:// 协议（就是直接将 html 页面拖拽到浏览器中）访问页面时 Respond.js 不起作用 -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+
+
+    <![endif]-->
+
+
+
+
+</head>
+<body>
+
+<div style="position: relative;width: 100%;z-index: 5">
+    <nav style="margin-bottom: 0px;" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="display: inline-block" class="navbar-brand" href="#">Neuers</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html">首页</a></li>
+                    <li class=""><a href="teamhomepage.html">竞赛</a></li>
+                    <li><a href="car.html">拼车</a></li>
+                    <li><a href="match.html">表白墙</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="aboutus.html">关于我们 </a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人信息 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html">登录/注册</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="main1.html">个人主页</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+
+<div style="width:100%;position:relative;top:0px" class="panel panel-default">
+    <div class="panel-body">
+<div class="bs-example" data-example-id="embedded-scrollspy">
+    <nav id="navbar-example2" class="navbar navbar-default navbar-static">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target=".bs-example-js-navbar-scrollspy">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">About Us</a>
+            </div>
+            <div class="collapse navbar-collapse bs-example-js-navbar-scrollspy">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="#fat">组员及分工</a></li>
+                    <li class=""><a href="#one">项目创意</a></li>
+                    <li class=""><a href="#two">Github地址</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div data-spy="scroll" data-target="#navbar-example2" data-offset="0" class="scrollspy-example">
+
+            <div  class="panel panel-default">
+            <div class="panel-body">
+                    <div class="row">
+                        <div class="container-fluid">
+                            <div class="col-sm-6">
+                                <h3 id="fat"> 组员及分工</h3>
+                                <table class="table table-bordered table-hover">
+                                    <tr>
+                                        <td class="active" rowspan="2"><a style="color: black" href="car.html">吴瑶<br/>20152025</a></td>
+                                        <td class="active">拼车功能页面的userstory填写、Mockplus原型设计和网页前端实现</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active">网站首页代码汇总</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active" rowspan="2"><a style="color: black" href="match.html">钱潮阳<br/>20150861</a></td>
+                                        <td class="active">表白墙页面的userstory填写、Mockplus原型设计和网页前端实现</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active">项目背景和前景创意撰写</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active" rowspan="2"><a style="color: black" href="teamhomepage.html">唐婧雯<br/>20150913</a></td>
+                                        <td class="active">竞赛组队页面的userstory填写、Mockplus原型设计和网页前端实现</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active">ER图合并汇总</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active" rowspan="2"><a style="color: black" href="login.html">王文嘉<br/>20150907</a></td>
+                                        <td class="active">登录注册页面的userstory填写、Mockplus原型设计和网页前端实现</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active">Mockplus合并汇总</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active" rowspan="2"><a style="color: black" href="main1.html">刘婷<br/>20150939</a></td>
+                                        <td class="active">个人主页页面的userstory填写、Mockplus原型设计和网页前端实现</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="active">类图合并汇总</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="col-sm-6">
+                                <img height="100%" width="100%" src="images/advice2.jpg" alt="">
+                                <h4>（点击组员姓名跳转到对应页面）</h4>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+        </div>
+
+
+        <div  class="panel panel-default">
+            <div class="panel-body">
+                <div class="row">
+                    <div class="container-fluid">
+                        <div class="col-xs-12">
+                            <h4 id="one">项目创意</h4>
+                            <p>NEUers是一个集拼车、竞赛组队、表白墙功能为一体的平台。该产品立足于东北大学学生，涵盖了三个学生使用频率较大的功能。同学们能在该平台上享受信息带来的便利。
+                            <p>谁的QQ里不是一大堆群，“拼车群”“竞赛群”等等，没事消息闪个不停，有事找不到有用的群聊。常用的社交软件变成了一个巨大的垃圾站。那么为何不使用NEUers这个平台呢？你想要的都能找到。</p>
+                            <p>出行拼车功能介绍：只需要三步就能帮你发布出行信息，让有相同出行计划的童鞋轻松找到你，一起拼车，方便又省钱，从此再也不用担心出门打车贵、单独出行不安全的问题啦~同时还能与发布信息的同学聊天，关注他/她发布的信息。</p>
+                            <p>竞赛组队功能介绍：想参加竞赛却无从得知比赛信息？想寻找靠谱的队友却不知从何入手？想发布队友招募信息却苦于没有平台？NEUers竞赛组队功能，一键解决跨校区、跨年级、跨学院、跨专业、不靠谱的烦恼，队友信息完备呈现，助你轻松找到理想队友。竞赛组队信息，你想要的都在这里。</p>
+                            <p>表白墙功能介绍：一键发布表白信息，还可以为喜欢的人点赞评论转发。</p>
+                            <p>个人主页功能介绍：可以通过进入个人主页看到自己的个人信息以及曾经发过的状态的记录等信息，同时还可以看到自己的粉丝、关注以及获得的点赞人数，主页右上角可以通过点击两个图标来查看自己的二维码以及修改个人信息，同时在个人主页中还可以看到自己的浏览记录以及访客记录，同时也会有自己的特别关心的人的动态等。</p>
+                            <p>注册登录页面功能介绍：注册功能主要是通过让用户填写用户名和密码等初始信息，在通过教务处的身份验证后获得进一步使用网站相关功能的资格并进一步完善自己的信息。登录功能主要是通过验证用户所填写的初始信息是否正确来决定用户是否可以进一步使用网站的相关服务。另外，登录页面还附加了一个重置密码的功能，在验证用户输入的学号和教务处密码正确后给予用户重新设置密码的权利，让用户不必为忘记密码而担心。</p>
+                            <p>我们平台未来将扩大使用群体，推广到全国各大高校中去。同时，我们还将为企业提供数据分析，广告定向投放等服务。</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+         <div  class="panel panel-default">
+             <div class="panel-body">
+                 <div class="row">
+                     <div class="container-fluid">
+                         <div class="col-xs-12">
+                            <h4 id="two">Github地址</h4>
+                             <a href="https://github.com/zhaopengyou/zhaopengyou2.0.git">https://github.com/zhaopengyou/zhaopengyou2.0.git</a><br/>
+                             <p>包含内容有：
+                            项目代码
+                            mockplus原型设计
+                            类设计图
+                            ER设计图
+                            Userstory
+                             </p>
+                         </div>
+                     </div>
+                </div>
+            </div>
+
+<!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+</html>
+

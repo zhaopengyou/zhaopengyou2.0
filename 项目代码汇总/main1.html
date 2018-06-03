@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="../../favicon.ico">
+
+    <title>personal information</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <link href="../../assets/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="jumbotron.css" rel="stylesheet">
+
+    <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <script src="../../assets/js/ie-emulation-modes-warning.js"></script>
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        [class^="navbar navbar-inverse navbar-fixed-top"]{
+            width:100%;
+            height: 30px;
+            background-color: #666666;
+        }
+        [class^="jumbotron"]{
+            background-color: #666666;
+
+        }
+        [class^="glyphicon"] {
+            color: white;
+            position: relative;
+            left: 1000px;
+            top: 10px;
+            font-size: 30px;
+        }
+        [id="h10"] {
+            height:160px;
+            position: relative;
+            left:40px;
+            top:40px;
+        }
+        [id="h1"]{
+            position: absolute;
+            top:120px;
+            left:370px;
+            color: white;
+        }
+        [id="h2"]{
+            position: absolute;
+            top:150px;
+            left:370px;
+            color: white;
+        }
+        [id="h3"]{
+            position: absolute;
+            top:180px;
+            left:370px;
+            text-decoration: none;
+            color: white;
+        }
+        [id="h4"]{
+            height:80px;
+            position:relative;
+            left:15px;
+            top:5px;
+        }
+        [id="h5"]{
+            height:80px;
+            position:relative;
+            left:15px;
+            top:5px;
+        }
+        [id="h6"]{
+            height:80px;
+            position:relative;
+            left:15px;
+            top:5px;
+        }
+        [id="h7"]{
+            height:80px;
+            position:relative;
+            left:15px;
+            top:5px;
+        }
+        [id="h8"]{
+            height:80px;
+            position:relative;
+            left:15px;
+            top:5px;
+        }
+        [id="h9"]{
+            height:80px;
+            position:relative;
+            left:15px;
+            top:5px;
+        }
+
+        [class="btn1"]{
+            position: absolute;
+            left:250px;
+            bottom:7px;
+        }
+        [d="a2"]{
+            width:350px; height:377px;
+            background-color: white;
+            position:relative;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left:10px;
+            margin-top:10px;
+        }
+        [d="a3"]{
+            width:350px;
+            height:377px;
+            background-color: white;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left:10px;
+            margin-top:10px;
+        }
+        [d="a4"]{
+            width:350px;
+            height:377px;
+            background-color: white;
+            margin-bottom: 10px;
+            margin-right: 10px;
+            margin-left:10px;
+            margin-top:10px;
+        }
+        body{
+            background-color: lightgrey;
+        }
+        p1{
+            position:absolute;
+            left:130px;
+            top:90px;
+        }
+        p2{
+            position:absolute;
+            left:130px;
+            top:180px;
+        }
+        p3{
+             position:absolute;
+             left:130px;
+             top:270px;
+         }
+        p4{
+            position:absolute;
+            left:130px; top:90px;
+        }
+        p5{
+            position:absolute;
+            left:130px; top:180px;
+        }
+        p6{
+            position:absolute;
+            left:130px;top:270px;
+        }
+        p7{
+            position:absolute;
+            color:orange;
+            left:115px; top:70px;
+        }
+        p8{
+            position:absolute;
+            left:120px; top:115px
+        }
+        p9{
+            position:absolute;
+            color:darkgrey;
+            size:5px;
+            left:115px; top:85px;
+        }
+        [id="h11"]{
+            width:130px;
+            position:absolute;
+            left:120px; top:145px
+        }
+       [d="a7"]{
+           position: relative;
+           top:0px;
+           left:150px;
+           background-color: dimgrey;
+           color:white;
+       }
+        [d="a6"]{
+            position: relative;
+            top:0px;
+            left:420px;
+            background-color: dimgrey;
+            color:white;
+        }
+        [d="a8"]{
+            position: relative;
+            top:0px;
+            left:680px;
+            background-color: dimgrey;
+            color:white;
+        }
+        [d="b1"]{
+            position:relative;
+            top:-150px;
+            left:1200px;
+        }
+        [d="b2"]{
+            position:relative;
+            top:-150px;
+            left:1110px;
+        }
+
+
+    </style>
+
+
+
+</head>
+
+<body>
+<div style="position: fixed;width: 100%;z-index: 5">
+    <nav style="margin-bottom: 0px;" class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a style="display: inline-block" class="navbar-brand" href="#">Neuers</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="index.html">首页</a></li>
+                    <li class=""><a href="teamhomepage.html">竞赛</a></li>
+                    <li><a href="car.html">拼车</a></li>
+                    <li><a href="match.html">表白墙</a></li>
+                </ul>
+                <form class="navbar-form navbar-left">
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="Search">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="aboutus.html">关于我们 </a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">个人信息 <span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="login.html">登录/注册</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="main1.html">个人主页</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav>
+</div>
+<!-- Main jumbotron for a primary marketing message or call to action -->
+<div class="jumbotron">
+    <div class="container-fluid">
+        <p id="h1" class="text-lowercase">李明</p>
+        <p><img id="h10" src="images/liming.jpg" alt="" class="img-circle"></p>
+        <p id="h2" class="text-lowercase">180****8888</p>
+        <a href="fans.html"><p id="h3" class="text-lowercase">粉丝 3  | 关注 3  | 获赞 0 </p></a>
+        <a href="change%20information.html"><span d="b1" class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+        <a href="code.html"><span d="b2" class="glyphicon glyphicon-qrcode" aria-hidden="true"></span></a>
+
+    </div>
+    <div class="btn-group" role="group" aria-label="...">
+    <button d="a8" type="button" class="btn btn-default btn1">我的收藏 </button>
+    <button d="a6" type="button" class="btn btn-default btn1">可能感兴趣的人</button>
+        <div class="btn-group" role="group">
+        <button d="a7" type="button" class="btn btn-default dropdown-toggle btn1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            应用信息
+            <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+            <li><a href="#">竞赛信息</a></li>
+            <li><a href="#">拼车记录</a></li>
+            <li><a href="#">告白记录</a></li>
+        </ul>
+    </div>
+</div>
+
+</div>
+
+<div d="a1" class="container">
+    <!-- Example row of columns -->
+    <div class="row">
+        <div d="a2" class="col-md-4">
+            <h2>谁看过我</h2>
+            <p><img id="h4" src="images/head1.jpg" alt="" class="img-circle"></p>
+            <p1>杨幂 <br>2018年5月8日 12:20</p1>
+            <p><img id="h5" src="images/head2.jpg" alt="" class="img-circle"></p>
+            <p2>刘恺威 <br>2018年5月8日 12:20</p2>
+            <p><img id="h6" src="images/head3.jpg" alt="" class="img-circle"></p>
+            <p3>唐嫣 <br>2018年5月8日 12:20</p3>
+            <p><a class="btn btn-default btn1" href="#" role="button">更多 &raquo;</a></p>
+        </div>
+        <div d="a3" class="col-md-4">
+            <h2>我看过谁</h2>
+            <p><img id="h7"src="images/head4.jpg" alt="" class="img-circle"></p>
+            <p4>王俊凯 <br>2018年5月8日 12:20</p4>
+            <p><img id="h8" src="images/head5.jpg" alt="" class="img-circle"></p>
+            <p5>王源 <br>2018年5月8日 12:20</p5>
+            <p><img id="h9" src="images/head6.jpg" alt="" class="img-circle"></p>
+            <p6>易烊千玺 <br>2018年5月8日 12:20</p6>
+            <p><a class="btn btn-default btn1" href="#" role="button">更多 &raquo;</a></p>
+        </div>
+        <div d="a4" class="col-md-4">
+            <h2>特别关心</h2>
+            <p><img id="h4" src="images/head1.jpg" alt="" class="img-circle"> </p>
+            <p7>杨幂</p7>
+            <p9>19分钟前   来自iphoneX</p9>
+            <p8>天气不错，附张自拍</p8>
+            <p><img id="h11" src="images/yangmi.jpg" alt=""></p>
+
+        </div>
+    </div>
+
+    <hr>
+
+    <footer>
+        <p></p>
+    </footer>
+</div> <!-- /container -->
+
+
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+<script src="https://cdn.bootcss.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+</body>
+</html>

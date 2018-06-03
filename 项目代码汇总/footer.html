@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>homepage</title>
+
+    <link href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <style type="text/css">
+        .contact-main h4 {
+            font-size: 2em;
+            letter-spacing: 1px;
+            color: #000;
+            margin-bottom: 10px;
+        }
+
+        .contact-main label.contact-p1 {
+            font-size: 17px;
+            letter-spacing: 0.5px;
+            color: #adadad;
+            font-weight: normal;
+            padding-bottom: 13px;
+            display: block;
+        }
+
+        textarea {
+            height: 75px;
+            width: 100%;
+        }
+
+        .inner_contact {
+            text-align: left;
+        }
+
+        .form-group {
+            margin-bottom: 5px;
+        }
+
+        .contact-main p.help-block {
+            color: lightskyblue!important;
+        }
+
+        .contact-main input#name,
+        .contact-main input#email,
+        .contact-main input#phone {
+            height: 45px;
+        }
+
+        .contact-main input#name,
+        .contact-main input#email,
+        .contact-main input#phone,
+        textarea {
+            font-size: 15px;
+            color: #000;
+            border-radius: 0;
+            outline: none;
+            box-shadow: none;
+            border: 1px solid #4D669C;
+            letter-spacing: 1px;
+            resize: none;
+            padding: 10px;
+        }
+
+        .contact-main button.btn.btn-primary {
+            color: #fff;
+            background: #333333;
+            border: 1px solid #333333;
+            font-size: 17px;
+            padding: 15px 20px;
+            width: 100%;
+            margin: 25px 0 8px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            outline: none;
+            box-shadow: none;
+            border-radius: 0;
+            -webkit-transition: all 0.5s ease 0.01s;
+            -o-transition: all 0.5s ease 0.01s;
+            -moz-transition: all 0.5s ease 0.01s;
+            transition: all 0.5s ease 0.01s;
+        }
+
+        .contact-main button.btn.btn-primary:hover {
+            background: transparent;
+            color: #4D669C;
+            border: 1px solid #4D669C;
+        }
+
+        .control-group.form-group.has-warning ul li {
+            list-style: none;
+        }
+
+        .control-group.form-group ul li {
+            list-style: none;
+        }
+
+        .contact-map iframe {
+            width: 100%;
+            height: 449px;
+            outline: none;
+            border: none;
+            display: block;
+        }
+
+
+        .address {
+            margin-top: 3em;
+        }
+
+        .address-left {
+            float: left;
+            width: 20%;
+            padding: 1.9em;
+            text-align: center;
+            background: #333333;
+        }
+
+        .address-left span.fa {
+            color: #FFFFFF;
+            font-size: 1.5em;
+        }
+
+        .address-right {
+            float: right;
+            width: 80%;
+            padding: 1.1em 2em;
+            background: lightgrey;
+        }
+
+        .address-right h6 {
+            color: #4D669C;
+            font-size: 1.1em;
+            margin: 0;
+            font-weight: 600;
+        }
+
+        .address-right p {
+            margin: 1em 0 0 0;
+            font-size: .9em;
+        }
+
+        .address-right p a {
+            color: #777;
+            text-decoration: none;
+        }
+
+        .address-right p a:hover {
+            color: #4D669C;
+        }
+
+        .address-right p span {
+            display: block;
+            margin: .5em 0;
+        }
+
+        .w3ls-address-grid:nth-child(2) {
+            margin: 1em 0;
+        }
+
+        .w3ls-address-grid:nth-child(4) {
+            margin: 1em 0 0;
+        }
+
+        ul.social-icons3 {
+            display: block;
+            padding: 0;
+            margin-top: 7px;
+        }
+
+        ul.social-icons3 li {
+            display: inline-block;
+        }
+
+        ul.social-icons3 li a {
+            display: block;
+            height: 30px;
+            width: 30px;
+            margin-right: 1em;
+            -webkit-transition: .5s all;
+            transition: .5s all;
+            -moz-transition: .5s all;
+            margin-right: 0.4em;
+            -webkit-transition: .5s all;
+            transition: .5s all;
+            -moz-transition: .5s all;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+            -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+            -moz-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+            -o-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+            -ms-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.16);
+            line-height: 30px;
+            color: #fff;
+            border-radius: 50%;
+            -webkit-border-radius: 50%;
+            -moz-border-radius: 50%;
+            -o-border-radius: 50%;
+            text-align: center;
+        }
+
+
+
+        ul.social-icons3 li a:hover {
+            text-decoration: none;
+            opacity: 0.8;
+        }
+        ul.social-icons3 {
+            display: block;
+            padding: 0;
+            margin-top: 7px;
+        }
+        ul, label {
+            margin: 0;
+            padding: 0;
+        }
+        ul, ol {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        * {
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+
+
+    </style>
+
+    <title>Title</title>
+</head>
+<body>
+
+<div style="margin:0px;background-color: #333333">
+    <div style="text-align:center;margin-top:0px;width:100%;color: white;background-color: #333333; margin: 0px;">
+        <h3>Website Creator</h3>
+    </div>
+    <div class="w3_agile-section text-center gallery" id="gallery">
+        <div class="container-fluid">
+
+            <img style="width: 15%" src="" alt="">
+            <div class="about-bottom  w3ls-team-info">
+                <div class="col-md-12">
+                    <div id="Carousel" class="carousel slide">
+                        <!-- Carousel items -->
+                        <div class="carousel-inner">
+
+                            <div class="item active">
+                                <div class="row">
+                                    <div class="col-md-2 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/qcy.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/qcy.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/tjw.png" class="thumbnail cm-overlay">
+                                            <img src="images/tjw.png" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/man.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/woman.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/man.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/woman.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/man.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/woman.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/man.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/woman.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/man.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/man.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/woman.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/woman.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/man.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/man.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/woman.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/woman.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                            <div class="item">
+                                <div class="row">
+                                    <div class="col-md-3 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/man.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/man.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/woman.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/woman.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/man.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/man.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-3 col-sm-6 col-xs-6 img-gallery-w3l">
+                                        <a href="images/woman.jpg" class="thumbnail cm-overlay">
+                                            <img src="images/woman.jpg" alt="Image" style="max-width:100%;">
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--.row-->
+                            </div>
+                            <!--.item-->
+
+                        </div>
+                        <!--.carousel-inner-->
+                        <a data-slide="prev" href="#Carousel" class="left carousel-control">‹</a>
+                        <a data-slide="next" href="#Carousel" class="right carousel-control">›</a>
+                    </div>
+                    <!--.Carousel-->
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="contact-main text-center w3_agile-section" id="contact">
+    <div class="contact-layer">
+        <div class="container">
+            <h3 class="title-wthree">contact</h3>
+
+            <div class="inner_contact  w3ls-team-info">
+                <div class="col-md-6 contact-leftgrid">
+                    <h4>Get In Touch</h4>
+                    <div class="address">
+                        <div class="w3ls-address-grid">
+                            <div class="address-left">
+                                <span style="color: white" class="glyphicon glyphicon-earphone" aria-hidden="true"></span>
+                            </div>
+                            <div class="address-right">
+                                <h6>Phone Number</h6>
+                                <p>+1 234 567 8901</p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="w3ls-address-grid">
+                            <div class="address-left">
+                                <span style="color: white" class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                            </div>
+                            <div class="address-right">
+                                <h6>Email Address</h6>
+                                <p>Email :
+                                    <a href="mailto:example@email.com"> mail@example.com</a>
+                                </p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="w3ls-address-grid">
+                            <div class="address-left">
+                                <span style="color: white" class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+                            </div>
+                            <div class="address-right">
+                                <h6>Location</h6>
+                                <p>Broome St, California.
+                                </p>
+                            </div>
+                            <div class="clearfix"> </div>
+                        </div>
+                        <div class="w3ls-address-grid">
+                            <div class="address-left">
+                                <span style="color: white" class="glyphicon glyphicon-heart" aria-hidden="true"></span>
+                            </div>
+                            <div class="address-right">
+                                <h6>Follow us</h6>
+                                <ul class="social-icons3">
+
+                                    <li>
+                                        <a href="#" class="s-icontwitter">
+                                            <img width="100%" src="images/facebook.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="s-icontwitter">
+                                            <img width="100%" src="images/twitter.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="s-icondribbble">
+                                            <img width="100%" src="images/Github.png" alt="">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="s-iconbehance">
+                                            <img width="100%" src="images/linkedin.png" alt="">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="clearfix"> </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+                <div class="col-lg-6 col-md-6  contact-right-grid">
+                    <div class="contact-form">
+                        <h4>Drop us a Line</h4>
+                        <form action="#" method="post" name="sentMessage" id="contactForm">
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label class="contact-p1">Full Name:</label>
+                                    <input type="text" class="form-control" name="name" id="name" required="">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label class="contact-p1">Email Address:</label>
+                                    <input type="email" class="form-control" name="email" id="email" required="">
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div class="control-group form-group">
+                                <div class="controls">
+                                    <label class="contact-p1">Message</label>
+                                    <textarea required=""></textarea>
+                                    <p class="help-block"></p>
+                                </div>
+                            </div>
+                            <div id="success"></div>
+                            <!-- For success/fail messages -->
+                            <button type="submit" class="btn btn-primary">Send</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="footer">
+    <div class="container">
+        <p>Copyright © 2017.Company name All rights reserved.</p>
+    </div>
+</div>
+</body>
+</html>

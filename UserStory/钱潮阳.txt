@@ -1,0 +1,8 @@
+Card:发布表白墙信息
+Conversation:
+作为一名已登录用户，能够在该页面发布新信息（文字和图片），以便下一步操作。
+Confirmation:
+游客发布成功——unpass
+游客发布失败——pass
+已登录用户发布成功——pass
+已登录用户发布失败——unpass
